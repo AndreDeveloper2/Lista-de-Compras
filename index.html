@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <title>Lista de Compras</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="scripts.js" defer></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+    <main>
+        <header>
+            <img src="./src/logo.svg" alt="">
+            <h1>quicklist</h1>
+        </header>
+        <button id="back"><i class="ph ph-arrow-left"></i>Voltar</button>
+        <h2>Compras da semana</h2>
+
+        <div class="add-item">
+            <input type="text" id="addTask" required placeholder="Adicione um novo item">
+            <button id="addBtn">Adicionar item</button>
+        </div>
+
+        <section>
+            <div class="wrapper">
+
+                <label class="label-checkbox" for="list1">
+                    <input type="checkbox" id="list1">
+                    <span>Pão de forma</span>
+                </label>
+                <button id="trash-icon"><img src="./src/trash-icon.svg" alt=""></button>
+            </div>
+
+            <div class="wrapper">
+
+                <label class="label-checkbox" for="list2">
+                    <input type="checkbox" id="list2">
+                    <span>Ovos</span>
+                </label>
+                <button id="trash-icon"><img src="./src/trash-icon.svg" alt=""></button>
+            </div>
+
+            <div class="wrapper">
+
+                <label class="label-checkbox" for="list3">
+                    <input type="checkbox" id="list3">
+                    <span>Açucar</span>
+                </label>
+                <button id="trash-icon"><img src="./src/trash-icon.svg" alt=""></button>
+            </div>
+
+            <div class="wrapper">
+                <label class="label-checkbox" for="list4">
+                    <input type="checkbox" id="list4">
+                    <span>Maionese</span>
+                </label>
+                <button id="trash-icon"><img src="./src/trash-icon.svg" alt=""></button>
+            </div>
+        </section>
+
+        <footer class="hide">
+            <p>
+                <img src="./src/alert-icon.svg" alt="">
+                O item foi removido da lista
+                
+            </p>
+
+            <button class="close-alert">
+                <img src="./src/close-icon.svg" alt="">
+            </button>
+        </footer>
+    </main>
+</body>
+
+</html>
